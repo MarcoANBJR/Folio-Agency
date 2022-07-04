@@ -1,0 +1,12 @@
+@import '../abstract/variaveis';
+
+html, body {
+    font-family: $fonte;    
+}
+
+// Dúvida: Tem que deixar delimitado como no Figma ou pode ser a tela inteira?
+// body {
+//     height: 1024px;
+//     width: 1440px;
+//     margin: auto;
+// }

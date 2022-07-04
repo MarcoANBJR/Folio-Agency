@@ -1,0 +1,60 @@
+@import '../abstract/variaveis';
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 64px 72px 0;
+    .img-logo {
+        cursor: pointer;
+        width: 159px;
+        height: 40px;
+    }
+    nav {
+        padding: 0 272px 0 293px;
+        flex-grow: 1;
+        ul {
+            font-size: 18px;
+            display: flex;
+            justify-content: space-around;
+            li {
+                a {
+                    display: flex;
+                    color: $text-color;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+                .about {
+                    color: $light-blue;
+                }
+                .jobs {                    
+                position: relative;
+                    img {
+                        position: absolute;
+                        height: 24px;
+                        width: 24px;
+                        top: -19px;
+                        right: -31px;
+                    }                
+                }     
+            }
+        }
+    }
+    .btn-contact {
+        display: flex;
+        background: $dark-blue;
+        color: white;
+        border-radius: 10px;
+        width: 180px;
+        height: 64px;   
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.7s;
+    }
+    .btn-contact:hover {
+        background: $light-blue;
+        color: $dark-blue;
+        transition: 0.5s;
+    }
+}
