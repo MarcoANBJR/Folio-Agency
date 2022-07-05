@@ -1,0 +1,25 @@
+@import '../abstract/variaveis';
+
+html, body {
+    font-family: $fonte;    
+}
+
+body {
+    height: 1024px;
+    width: 1440px;
+    margin: auto;
+}
+
+@media screen and (max-width: $tablet) {
+    body {
+        width: $tablet;
+        height: 768px;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    body {
+        width: $mobile;
+        height: 812px;
+    }
+}
