@@ -1,12 +1,15 @@
 @import '../abstract/variaveis';
 
 main {   
-    #header {
-        position: relative;
+    #hero {
+        display: flex;
         padding: 110px 0 80px 135px;
+        // background-image: url('/img/pc.png');
+        // background-repeat: no-repeat;
+        // background-position: 406px 284px 10px 10px;
         .text {
-            width: 467px;
-            height: 548px;
+            width: 30%;
+            height: 706px;
             h1{
                 font-weight: 700;
                 line-height: 100px;
@@ -45,27 +48,29 @@ main {
             }
         }    
         .imgs {
-            .fundo {                
-            position: absolute;  
-            width: 570px;
-            height: 722px;
-            right: 135px;
-            top: 94px;
+            max-height: 706px;
+            text-align: end;
+            width: 70%;
+            .fundo {
+                position: relative;
+                width: 60%;
+                top: -14px;
+                height: 102%;
+                right: 135px;
             }
             .fundo-pc {
-                position: absolute; 
-                width: 924px;
-                height: 660px;
+                position: relative;
+                width: 100%;
+                top: -670px;
                 right: 110px;
-                top: 156px;
             }
             .fundo-line{
                 z-index: -1;
                 position: absolute;
                 height: 819.24658203125px;
-                width: 642.2090454101562px;
+                max-width: 642.2090454101562px;
                 left: 322px;
-                top: -129px;
+                top: 0px;
             }
         }
         .btn-scroll {
@@ -79,6 +84,9 @@ main {
                 .arrow {                    
                     width: 48px;
                     height: 48px;
+                }
+                a {
+                    text-decoration: none;
                 }
                 p {
                     font-weight: 600;
@@ -105,6 +113,7 @@ main {
         background: #232340;
         position: relative;
         height: 1670px;
+        margin-top: 40px;
         .line {
             position: absolute;
             top: 0px;
@@ -648,11 +657,13 @@ main {
             width: 1001px;
             margin: 0 304px 150px 135px;
             .box {
+                position: relative;
                 img {
+                    max-width: 1440px;
                     z-index: -1;
                     position: absolute;
-                    left: 24px;
-                    top: 5026px;
+                    left: -133px;
+                    top: -319px;
                 }
                 .btn-feature {
                     display: flex;
@@ -705,7 +716,7 @@ main {
                     height: 72px;
                     border-radius: 50%;
                     background: #232340;
-                    margin-left: 360px;
+                    margin-left: 333px;
                     
                     font-weight: 700;
                     font-size: 18px;
@@ -1392,7 +1403,7 @@ footer {
 
 @media screen and (max-width: $tablet) {
     main {
-        #header {
+        #hero {           
             padding: 73.49px 0 87px 107px;
             .text {
                 width: 332px;
@@ -1421,20 +1432,20 @@ footer {
                 width: 405.33px;
                 height: 513.42px;
                 right: 135px;
-                top: 94px;
+                top: -3px;
                 }
                 .fundo-pc {
                     position: absolute; 
                     width: 602px;
                     height: 468px;
-                    right: 117px;
-                    top: 115px;
+                    right: 107px;
+                    top: 198px;
                 }
                 .fundo-line{
                     width: 456.68px;
-                    height: 582.58px;                    
-                    left: 245px;
-                    top: -99px;
+                    height: 582.58px;
+                    left: 249px;
+                    top: 0px;
                 }
             }
             .btn-scroll {
@@ -1449,19 +1460,35 @@ footer {
                     span {
                         display: none;
                     }
+                    p {
+                        height: 44px;
+                        width: 94px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
                     p:after {
                         content: "Swipe down to explore";
                     }
                 }
             }
         }
+
+        #whoweare {
+            height: 1270.44px;
+            .top-1 {
+                max-width: 823px;
+            }
+            
+        }
     }
 }
 
 @media screen and (max-width: $mobile) {
     main {   
-        #header {
-            padding: 0 32px 0px 32px;
+        #hero {
+            padding: 0 32px 64px 32px;
+            height: 684px;
             .text {
                 width: 311px;
                 height: 359px;
@@ -1488,21 +1515,21 @@ footer {
                 .fundo {
                 width: 287px;
                 height: 363.51px;
-                right: -87px;
+                right: 123px;
                 top: 320px;
                 }
                 .fundo-pc {
                     position: absolute; 
-                    width: 475px;
-                    height: 368px;
-                    right: -84px;
-                    top: 334px;
+                    width: 114%;
+                    height: 33%;
+                    right: -71px;
+                    top: 512px;
                 }
                 .fundo-line{
                     width: 456.68px;
-                    height: 582.58px;                    
+                    height: 582.58px;  
                     left: 169px;
-                    top: -141px;
+                    top: 0%;
                 }
             }
             .btn-scroll {

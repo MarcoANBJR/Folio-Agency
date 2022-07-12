@@ -13,10 +13,10 @@
         <img class="img-logo" src="./img/logo-dark.png" alt="logo">
         <nav>
             <ul>
-                <li><a href="./index.html" class="about">About</a></li>                    
-                <li><a href="#">Work</a></li>                    
-                <li><a href="#">Services</a></li>                    
-                <li><a href="#" class="jobs">
+                <li><a href="./index.html">About</a></li>                    
+                <li><a href="#works">Work</a></li>                    
+                <li><a href="#services" class="disabled">Services</a></li>                    
+                <li><a href="#jobs">
                     Jobs
                     <img src="./img/notification.png" alt="notification">
                 </a>                        
@@ -25,14 +25,24 @@
         </nav>
         <div class="menu"></div>
         <div class="btn-contact">Contact Us</div>
-    </header>    
+    </header>   
+
     <main>
-        <section id="header">
+        <section id="hero">
             <div class="text">
                 <h1>Stand Out from The Crowd.</h1>
                 <p class="text-body">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
                 <div class="btn-recent-work">
                     Recent Work
+                </div>
+
+                <div class="btn-scroll">
+                    <div class="btn">
+                        <img class="arrow" src="./img/arrow.png" alt="arrow">
+                        <a href="#whoweare"><p><span>
+                            Scroll down
+                        </span></p></a>
+                    </div>
                 </div>
             </div>                        
             <div class="imgs">
@@ -40,15 +50,10 @@
                 <img class="fundo-pc" src="./img/pc.png" alt="fundo2">
                 <img class="fundo-line" src="./img/line.png" alt="fundo3">
             </div>     
-            <div class="btn-scroll">
-                <div class="btn">
-                    <img class="arrow" src="./img/arrow.png" alt="arrow">
-                    <p>Scroll down</p>
-                </div>
-            </div>     
+            
         </section>
 
-        <section id="whoweare">     
+        <section id="whoweare">
             <img class="line" src="/img/whoweare/line.png" alt="line"> 
             <img class="bg-dark" src="/img/whoweare/bg-dark.png" alt="Background">
             <div class="top-1">
@@ -113,7 +118,7 @@
             </div>
         </section>
 
-        <section id="services">     
+        <section id="services">
             <img class="line1" src="/img/whatwedo/line1.png" alt="line"> 
             <img class="line2" src="/img/whatwedo/line2.png" alt="line">        
             <div class="top-2">
@@ -330,7 +335,7 @@
             </div>
         </section>
 
-        <section id="jobs"> 
+        <section id="jobs">
             <img class="line" src="/img/jobs/line.png" alt="line">           
             <img class="logo" src="/img/logo-symbol.png">
 
@@ -430,8 +435,14 @@
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>      
     </main>
+
+    <nav class="up">
+        <a href="#hero">
+            Top
+        </a>
+    </nav>
 
     <footer>
         <img class="line" src="/img/footer/line.png" alt="line">

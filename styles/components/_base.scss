@@ -1,24 +1,26 @@
 @import '../abstract/variaveis';
 
 html, body {
-    font-family: $font;    
+    font-family: $font;   
+    scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+    display: none;
+} 
 
 body {
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
 }
 
 @media screen and (max-width: $tablet) {
-    #intro {
-        width: $tablet;
-        height: 768px;
+    body {
+        max-width: $tablet;
     }
 }
 
 @media screen and (max-width: $mobile) {
-    #intro {
-        width: $mobile;
-        height: 684px;
+    body {
+        max-width: $mobile;
     }
 }
